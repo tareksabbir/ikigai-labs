@@ -4,6 +4,7 @@ import "./globals.css";
 import { ThemeProvider } from "@/components/custom/theme-provider";
 import { ClerkProvider } from "@clerk/nextjs";
 import { dark } from "@clerk/themes";
+import { ConvexClientProvider } from "@/components/custom/ConvexClientProvider";
 
 const inter = Inter({
   variable: "--font-inter",
@@ -42,7 +43,7 @@ export default function RootLayout({
                 },
               }}
             >
-              {children}
+              <ConvexClientProvider>{children}</ConvexClientProvider>
             </ClerkProvider>
           </ThemeProvider>
         </body>
