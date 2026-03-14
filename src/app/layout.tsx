@@ -2,9 +2,7 @@ import type { Metadata } from "next";
 import { IBM_Plex_Mono, Inter } from "next/font/google";
 import "./globals.css";
 import { ThemeProvider } from "@/components/custom/theme-provider";
-import { ClerkProvider } from "@clerk/nextjs";
-import { dark } from "@clerk/themes";
-import { ConvexClientProvider } from "@/components/custom/ConvexClientProvider";
+import { Providers } from "@/components/convex/providers";
 
 const inter = Inter({
   variable: "--font-inter",
@@ -29,22 +27,17 @@ export default function RootLayout({
     <>
       <html lang="en" suppressHydrationWarning>
         <head />
-        <body className={`${inter.variable} ${plexMono.variable} antialiased`}>
+        <body
+          className={`${inter.variable} ${plexMono.variable} antialiased`}
+          suppressHydrationWarning
+        >
           <ThemeProvider
             attribute="class"
             defaultTheme="dark"
             enableSystem
             disableTransitionOnChange
           >
-            <ClerkProvider
-              appearance={{
-                appearance: {
-                  theme: dark,
-                },
-              }}
-            >
-              <ConvexClientProvider>{children}</ConvexClientProvider>
-            </ClerkProvider>
+            <Providers>{children}</Providers>
           </ThemeProvider>
         </body>
       </html>
