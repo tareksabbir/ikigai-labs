@@ -7,13 +7,8 @@ import { Menu, X } from "lucide-react";
 import Logo from "@/components/custom/logo";
 import { SignInButton, UserButton, useAuth } from "@clerk/nextjs";
 
-const NAV_LINKS = [
-  { label: "Product", href: "/" },
-  { label: "About", href: "/about" },
-  { label: "Blog", href: "/blog" },
-  { label: "Dashboard", href: "/dashboard", authOnly: true },
-  { label: "Pricing", href: "#" },
-];
+import { NAV_LINKS } from "@/data/navigation";
+
 
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
