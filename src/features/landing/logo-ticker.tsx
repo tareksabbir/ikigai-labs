@@ -3,19 +3,8 @@
 import { motion } from "framer-motion";
 import { Zap, ScanLine, Asterisk, Chrome } from "lucide-react";
 
-const LOGOS_ROW_1 = [
-  { name: "SignFlow", icon: Chrome },
-  { name: "CloudSync", icon: Zap },
-  { name: "NotionKit", icon: ScanLine },
-  { name: "DataStream", icon: Asterisk },
-];
+import { LOGOS_ROW_1, LOGOS_ROW_2 } from "@/data/logos";
 
-const LOGOS_ROW_2 = [
-  { name: "NotionKit", icon: ScanLine },
-  { name: "DataStream", icon: Asterisk },
-  { name: "SignFlow", icon: Chrome },
-  { name: "CloudSync", icon: Zap },
-];
 
 // Combine and duplicate for infinite scroll
 const ROW_1_ITEMS = [...LOGOS_ROW_1, ...LOGOS_ROW_1, ...LOGOS_ROW_1, ...LOGOS_ROW_1];
