@@ -63,12 +63,6 @@ export default function Navbar() {
               </div>
             ) : (
               <div className="flex items-center gap-4">
-                <Link 
-                  href="/dashboard/"
-                  className="text-xs font-mono uppercase tracking-widest text-white/40 hover:text-white transition-colors"
-                >
-                  Dashboard
-                </Link>
                 <UserButton />
               </div>
             )}

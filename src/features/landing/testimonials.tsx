@@ -80,7 +80,7 @@ const MarqueeRow = ({
       >
         {duplicatedItems.map((testimonial, index) => (
           <div
-            key={index}
+            key={testimonial.author + index}
             className="w-87.5 md:w-112.5 shrink-0 p-8 rounded-2xl bg-[#111111] border border-white/5 hover:bg-[#151515] hover:border-white/20 hover:shadow-[0_0_30px_rgba(255,255,255,0.03)] transition-all duration-300 group"
           >
             <p className="text-white/90 text-[15px] leading-relaxed mb-8 h-25 overflow-hidden">
