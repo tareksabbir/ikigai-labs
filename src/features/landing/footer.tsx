@@ -5,7 +5,7 @@ import Link from "next/link";
 import Logo from "@/components/custom/logo";
 import { ArrowUpRight } from "lucide-react";
 
-import { FOOTER_LINKS, SOCIAL_LINKS } from "@/data/navigation";
+import { FOOTER_LINKS, SOCIAL_LINKS } from "@/data/landing/navigation";
 
 
 

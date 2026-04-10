@@ -12,10 +12,7 @@ import Link from "next/link";
 import Image from "next/image";
 import { Doc } from "../../../../convex/_generated/dataModel";
 import { api } from "../../../../convex/_generated/api";
-
-// ─── Data ─────────────────────────────────────────────────────────────────────
-
-const CATEGORIES = ["All", "Engineering", "Product", "Company", "Guides"];
+import { CATEGORIES } from "@/data/marketing/blog";
 
 // ─── Components ──────────────────────────────────────────────────────────────
 

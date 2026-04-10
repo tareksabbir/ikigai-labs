@@ -10,7 +10,7 @@ import {
   TERMINAL_LINES,
   TOKEN_COLOR,
   WINDOW_TABS,
-} from "@/data/hero-data";
+} from "@/data/landing/hero-data";
 
 // ── Framer Motion variants ──────────────────────────────────────────
 const fadeUp: Variants = {

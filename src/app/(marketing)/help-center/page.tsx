@@ -4,35 +4,9 @@ import React from "react";
 import Navbar from "@/features/landing/navbar";
 import Footer from "@/features/landing/footer";
 import { motion } from "framer-motion";
-import { HelpCircle, MessageSquare, Mail, Search, ArrowRight, LifeBuoy, FileText, Settings, Shield } from "lucide-react";
+import { Search, MessageSquare, Mail, ArrowRight } from "lucide-react";
 import Link from "next/link";
-
-const FAQ_CATEGORIES = [
-  {
-    title: "Account & Billing",
-    icon: Settings,
-    desc: "Manage your research subscription, lab seats, and data exports.",
-    questions: ["How do I upgrade my plan?", "Can I add more investigators?", "Lab data ownership policy"],
-  },
-  {
-    title: "Technical Support",
-    icon: HelpCircle,
-    desc: "Troubleshoot interface issues and system performance.",
-    questions: ["Editor latency optimization", "Context engine troubleshooting", "Fixing terminal ghosting"],
-  },
-  {
-    title: "Data Security",
-    icon: Shield,
-    desc: "Understand how we protect your research and codebase.",
-    questions: ["Is my code used for training?", "On-premise deployment", "Compliance standards"],
-  },
-  {
-    title: "Lab Features",
-    icon: FileText,
-    desc: "Deep dives into using specific ikigai tools.",
-    questions: ["Mastering neural completion", "Using predictive terminal", "Custom Lab plugins"],
-  },
-];
+import { FAQ_CATEGORIES } from "@/data/marketing/help-center";
 
 export default function HelpCenterPage() {
   return (

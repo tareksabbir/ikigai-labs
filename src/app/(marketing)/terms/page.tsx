@@ -4,15 +4,7 @@ import React from "react";
 import Navbar from "@/features/landing/navbar";
 import Footer from "@/features/landing/footer";
 import { motion } from "framer-motion";
-import { Shield, Lock, Scale, FileText, ArrowRight } from "lucide-react";
-import Link from "next/link";
-
-const SECTIONS = [
-  { id: "terms", title: "Terms of Service", icon: Scale },
-  { id: "privacy", title: "Privacy Policy", icon: Lock },
-  { id: "data", title: "Data Management", icon: Shield },
-  { id: "compliance", title: "Compliance", icon: FileText },
-];
+import { SECTIONS } from "@/data/marketing/terms";
 
 export default function TermsPage() {
   return (

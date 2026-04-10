@@ -7,7 +7,7 @@ import { Search, ArrowRight } from "lucide-react";
 import Link from "next/link";
 
 
-import { DOCS_GROUPS } from "@/data/documentation";
+import { DOCS_GROUPS } from "@/data/docs/documentation";
 
 
 export default function DocumentationPage() {

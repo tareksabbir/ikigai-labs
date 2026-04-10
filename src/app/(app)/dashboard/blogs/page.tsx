@@ -1,4 +1,3 @@
-/* eslint-disable @typescript-eslint/no-explicit-any */
 "use client";
 
 import React, { useState } from "react";
@@ -8,6 +7,7 @@ import { motion, AnimatePresence } from "framer-motion";
 import { useUser, RedirectToSignIn } from "@clerk/nextjs";
 import { useQuery, useMutation } from "convex/react";
 import { api } from "../../../../../convex/_generated/api";
+import { Id } from "../../../../../convex/_generated/dataModel";
 import {
   Edit3,
   Trash2,
@@ -28,7 +28,7 @@ export default function BlogManagementPage() {
   const deleteBlog = useMutation(api.blogs.deleteBlog);
 
   const [searchTerm, setSearchTerm] = useState("");
-  const [deletingId, setDeletingId] = useState<string | null>(null);
+  const [deletingId, setDeletingId] = useState<Id<"blogs"> | null>(null);
 
   if (!isLoaded) {
     return (
@@ -48,7 +48,7 @@ export default function BlogManagementPage() {
       b.category.toLowerCase().includes(searchTerm.toLowerCase()),
   );
 
-  const handleDelete = async (id: any) => {
+  const handleDelete = async (id: Id<"blogs">) => {
     try {
       await deleteBlog({ id });
       setDeletingId(null);

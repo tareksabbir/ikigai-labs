@@ -3,7 +3,7 @@
 import { motion } from "framer-motion";
 import Image from "next/image";
 
-import { testimonials } from "@/data/testimonials";
+import { testimonials } from "@/data/landing/testimonials";
 
 
 // Split testimonials into 3 rows

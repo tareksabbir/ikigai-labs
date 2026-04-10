@@ -3,7 +3,7 @@
 import { motion } from "framer-motion";
 
 
-import { LOGOS_ROW_1, LOGOS_ROW_2 } from "@/data/logos";
+import { LOGOS_ROW_1, LOGOS_ROW_2 } from "@/data/landing/logos";
 
 
 // Combine and duplicate for infinite scroll

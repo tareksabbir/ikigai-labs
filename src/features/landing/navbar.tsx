@@ -7,7 +7,7 @@ import { Menu, X } from "lucide-react";
 import Logo from "@/components/custom/logo";
 import { SignInButton, UserButton, useAuth } from "@clerk/nextjs";
 
-import { NAV_LINKS } from "@/data/navigation";
+import { NAV_LINKS } from "@/data/landing/navigation";
 
 
 export default function Navbar() {

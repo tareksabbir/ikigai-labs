@@ -19,7 +19,7 @@ import {
   CARD3_EDITOR, 
   CARD3_TERMINAL, 
   CARD3_AI_CHAT 
-} from "@/data/features";
+} from "@/data/landing/features";
 
 
 

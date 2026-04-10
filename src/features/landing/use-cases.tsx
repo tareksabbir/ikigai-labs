@@ -1,7 +1,7 @@
 
 
 import Image from "next/image";
-import { USE_CASE_CODE } from "@/data/features";
+import { USE_CASE_CODE } from "@/data/landing/features";
 
 
 export default function UseCases() {

@@ -2,7 +2,7 @@
 
 
 
-import { benefits } from "@/data/benefits";
+import { benefits } from "@/data/landing/benefits";
 
 
 export default function Benefits() {
